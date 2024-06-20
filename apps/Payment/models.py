@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-from apps.Order import Order
+
+from apps.Order.models import Order
 
 class Payment(models.Model):
    payment_method = models.CharField(max_length=100);

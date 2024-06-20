@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from apps.Order import Order
+from apps.Order.models import Order
 
 class Address(models.Model):
    user = models.ForeignKey(User, on_delete=models.CASCADE);
