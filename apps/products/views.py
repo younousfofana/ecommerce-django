@@ -1,5 +1,5 @@
 from urllib import request
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from apps.products.models import Products, Category
 
 def index(request):
@@ -14,3 +14,10 @@ def index(request):
         "products" : products
     }
     return render(request,"products/index.html", context)
+
+def productDetail(request, product_id):
+    product = get_object_or_404(Products, pk=product_id)
+    context = {
+        "product" : product
+    }
+    return render(request, "products/product_detail.html", context)
