@@ -118,3 +118,45 @@
     opacity: 1;
     transform: scale(1);
 }
+
+@keyframes growFromBottom {
+    from {
+        transform: scaleY(0);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        opacity: 1;
+    }
+}
+
+@keyframes growFromTop {
+    from {
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+/* .grow-from-bottom {
+    transform-origin: bottom;
+}
+
+.grow-from-top {
+    transform-origin: top;
+} */
+
+#cardButton.grow-from-bottom {
+    animation: growFromBottom 5s forwards;
+}
+
+#orderButton.grow-from-top {
+    animation: growFromTop 5s forwards;
+}

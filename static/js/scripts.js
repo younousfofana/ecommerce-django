@@ -1,6 +1,4 @@
 const element = document.getElementById('productImage');
-console.log('Element reçu', element);
-
 // Animation d'apparition
 setTimeout(() => {
     element.classList.add('visible');
@@ -19,3 +17,11 @@ element.addEventListener('mouseleave', (e) => {
     element.style.transform = 'scale(1)';
     element.style.zIndex = 'auto';
 });
+
+const cardButton = document.getElementById('cardButton');
+const orderButton = document.getElementById('orderButton');
+
+setTimeout(()=>{
+    cardButton.classList.add('grow-from-bottom');
+    orderButton.classList.add('grow-from-top');
+}, 100);
