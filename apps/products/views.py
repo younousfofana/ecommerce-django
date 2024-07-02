@@ -21,3 +21,10 @@ def productDetail(request, product_id):
         "product" : product
     }
     return render(request, "products/product_detail.html", context)
+
+def categoryDetail(request, category_id):
+    category = get_object_or_404(Category, pk=category_id)
+    context= {
+        category: category
+    }
+    return render(request, "products/category_detail.html", context);
