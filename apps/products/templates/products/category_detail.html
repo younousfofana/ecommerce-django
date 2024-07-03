@@ -5,7 +5,7 @@
 {% block content %}
     <div class="container g-0">
         <div class="categoryTitle">
-            <h1>Electronics</h1>
+            <h1 class="fs-2 mb-0">Electronics</h1>
             <p>Discover the latest technology and devices</p>
         </div>
         <div class="smallCategories d-flex justify-content-between mb-3">
@@ -83,14 +83,38 @@
             </div>
         </div>
         <div class="row g-0">
-            <div class="col-lg-4 bg-success rounded-2" style="min-height: 200px;">
-                <img src="https://placehold.co/140x125" alt="">
+            <div class="col-lg-5 rounded-2 p-5">
+                <div class="d-flex rounded-5 justify-content-center align-items-start" style="min-height: 516px; background-color: #e4a616af; color: white;">
+                    {% load static %}
+                    <img src="{% static 'images/realPhone.jpg' %}" alt="" height="400px" style="">
+                </div>
             </div>
-            <div class="row col-lg-8">
-                <div class="col-lg-4">
-                    <div class="position-relative rounded-4 overflow-hidden p-4" style="background-color: #8a2be2; color: white;">
-                        <img src="https://placehold.co/60x60" class="rounded-2" alt="Product Image">
-                        <div class="product-info">
+            <div class="row col-lg-7 mx-auto p-0">
+                <div class="col-lg-4 rounded-5" style="width: 250px; height: 280px;">
+                    <div class="position-relative overflow-hidden m-0 p-2 rounded-5" style="background-color: #8a2be2; color: white;">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="160" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden" style="text-overflow: ellipsis;">Samsung Galaxy Fold 5G Cosmos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 rounded-5" style="width: 250px; height: 280px;">
+                    <div class="position-relative overflow-hidden m-0 p-2 rounded-5" style="background-color: #8a2be2; color: white;">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="160" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="">$49.99</span>
                                 <span class="">
@@ -101,10 +125,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="position-relative rounded-4 overflow-hidden p-4" style="background-color: #8a2be2; color: white;">
-                        <img src="https://placehold.co/60x60" class="rounded-2" alt="Product Image">
-                        <div class="product-info">
+
+                <div class="col-lg-4 rounded-5" style="width: 250px; height: 280px;">
+                    <div class="position-relative overflow-hidden m-0 p-2 rounded-5" style="background-color: #8a2be2; color: white;">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="160" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="">$49.99</span>
                                 <span class="">
@@ -114,11 +142,15 @@
                             <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
                         </div>
                     </div>
-                </div> 
-                <div class="col-lg-4">
-                    <div class="position-relative rounded-4 overflow-hidden p-4" style="background-color: #8a2be2; color: white;">
-                        <img src="https://placehold.co/60x60" class="rounded-2" alt="Product Image">
-                        <div class="product-info">
+                </div>
+
+                <div class="col-lg-4 rounded-5" style="width: 250px; height: 280px;">
+                    <div class="position-relative overflow-hidden m-0 p-2 rounded-5" style="background-color: #8a2be2; color: white;">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="160" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="">$49.99</span>
                                 <span class="">
@@ -128,9 +160,154 @@
                             <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
                         </div>
                     </div>
-                </div>    
+                </div>
+                
+                <div class="col-lg-4 rounded-5" style="width: 250px; height: 280px;">
+                    <div class="position-relative overflow-hidden m-0 p-2 rounded-5" style="background-color: #8a2be2; color: white;">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="160" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 rounded-5" style="width: 250px; height: 280px;">
+                    <div class="position-relative overflow-hidden m-0 p-2 rounded-5" style="background-color: #8a2be2; color: white;">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="160" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                
             </div> 
         </div>
+        <!-- <div class="d-flex justify-content-between">
+            <div class="applePhone" style="width: 400px; height: 400px; background-color: red">
+
+            </div>
+            <div class="d-flex justify-content-around flex-wrap bg-success" style="width: 890px;height: 480px;">
+                <div class="rounded-5 p-0" style="width: 230px; height: 280px; background-color: #8a2be2; color: white;">
+                    <div class="position-relative overflow-hidden m-0" style="">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="190" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-5 p-0" style="width: 230px; height: 280px; background-color: #8a2be2; color: white;">
+                    <div class="position-relative overflow-hidden m-0" style="">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="190" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-5 p-0" style="width: 230px; height: 280px; background-color: #8a2be2; color: white;">
+                    <div class="position-relative overflow-hidden m-0" style="">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="190" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-5 p-0" style="width: 230px; height: 280px; background-color: #8a2be2; color: white;">
+                    <div class="position-relative overflow-hidden m-0" style="">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="190" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-5 p-0" style="width: 230px; height: 280px; background-color: #8a2be2; color: white;">
+                    <div class="position-relative overflow-hidden m-0" style="">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="190" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder overflow-hidden">Samsung Galaxy Fold 5G Cosmos Black</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-5 p-0" style="width: 230px; height: 280px; background-color: #8a2be2; color: white;">
+                    <div class="position-relative overflow-hidden m-0" style="">
+                        {% load static %}
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="{% static 'images/occulusQuest.jpg' %}" class="rounded-5" alt="Product Image" width="190" height="auto">
+                        </div>
+                        <div class="product-info" style="padding: 0 20px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">$49.99</span>
+                                <span class="">
+                                    ⭐⭐
+                                </span>
+                            </div>
+                            <div class="mt-2 fw-bolder text-overflow">Samsung Galaxy Fold 5G Cosmos BlackBlac  kBlackBlackBlackBlack</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
 {% endblock %}
 
