@@ -32,12 +32,19 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg">
-                <div class="h5">
-                    <span>Order Details</span> 
-                    <p>Sold By Brandy and fulfilled br amazon</p>
+            <div class="col-lg ms-4 me-4">
+                <div class="ps-3 pe-3">
+                    <div class="h5">
+                        <span class="" style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">Order Details</span> 
+                    </div>
+                    <div class="">
+                        Sold By <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">Brandy</span> and <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">fulfilled</span>
+                    </div>
+                    <div class="mb-4">
+                        <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">by amazon</span> 
+                    </div>
                 </div>
-                <div class="rounded-4 bg-secondary p-4">
+                <div class="rounded-5 bg-secondary p-4 mb-4">
                     <div class="h5">
                         $<span>{{product.price}}</span>
                     </div>
@@ -49,15 +56,71 @@
                         <button type="button" class="btn btn-success rounded-bottom-4" id="orderButton">1-Click order</button>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                    <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                <span> Order within 
+                                    <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">
+                                        12hr 40min
+                                    </span> 
+                                    to get it by 
+                                    <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">
+                                        Monday 9pm
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="row">
+                           <div class="col-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8m4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5"/>
+                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                              </svg>
+                           </div>
+                           <div class="col-10">
+                                Secure transaction
+                           </div>
+                        </div>  
+                       
+                    </div>
+                    <div class="col-12 mb-3"> 
+                        <div class="row">
+                            <div class="col-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                </svg>
+                            </div>
+                            <div class="col-10">
+                                Deliver to 
+                                <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">
+                                    John
+                                </span> 
+                                to 
+                                <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">
+                                    California
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row mt-2">
-            <div class="col-lg-5">
+            <div class="col-lg-4">
                 <div class="">
                     <img src="https://placehold.co/500x350" alt="" class="rounded-2">
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-end align-items-end">
+            <div class="col-lg-5 d-flex align-items-end justify-content-start ps-5 pe-5">
                 <div class="card bg-info mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-8">
@@ -72,8 +135,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-
+            <div class="col-lg d-flex justify-content-start align-items-end">
+                <div>
+                    Compare offers on Amazon 7 new offers from : $3920
+                </div>
             </div>
         </div>
     </div>
