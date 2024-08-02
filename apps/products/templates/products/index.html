@@ -23,13 +23,13 @@
       </div>
     </div>
   </div>
-  <div class="container mb-3">
+  <div class="container-fluid mb-3">
     <div class="mt-2">
       <h2>Categories</h2>
     </div>
     <div class="row">
       {% for category in categories %}
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">
           <a href="{% url 'categoryDetail' category.pk %}" style="text-decoration: none;">
             <div class="rounded-2 bg-dark d-flex flex-row me-2 align-items-center justify-content-center" style="min-height: 100px; min-width: 188px;">
               <h3 class="text-light text-center">{{category.name}}</h3>
@@ -40,7 +40,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="mt-2">
       <h2>Products</h2>
     </div>
@@ -74,14 +74,14 @@
     </div>
   </div>
 
-  <div class="mil-frame">
+  <!-- <div class="mil-frame"> -->
       <!-- <div class="mil-frame-top">
         <a href="index.php" class="mil-logo">A.</a>
         <div class="mil-menu-btn">
             <span></span>
         </div>
       </div> -->
-    <div class="mil-frame-bottom">
+    <!-- <div class="mil-frame-bottom">
         <div class="mil-current-page"></div>
         <div class="mil-back-to-top">
             <a href="#top" class="mil-link mil-dark mil-arrow-place">
@@ -92,6 +92,6 @@
             </a>
         </div>
     </div>
-  </div>
+  </div> -->
   
 {% endblock %}

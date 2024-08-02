@@ -1,5 +1,9 @@
 *{
     scrollbar-width: thin;
+    font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans' !important;
+}
+.customize-ul{
+    padding-left: 1rem;
 }
 .mil-frame{
     padding: 50px 60px 60px 60px;

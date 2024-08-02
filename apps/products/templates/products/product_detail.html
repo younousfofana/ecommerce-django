@@ -3,26 +3,36 @@
 {% block title %}BuyMore{% endblock %}
 
 {% block content%}
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-4">
                 <div class="h6">
-                    <span>All-in-one VR Gaming Headset-64GB</span>
+                    <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">All-in-one VR Gaming Headset-64GB</span>
                 </div>
                 <div class="">
                     <img src="https://placehold.co/500x350" alt="" class="rounded-2" id="productImage">
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="h2">
-                    <span>{{product.name}}</span>
+            <div class="col-lg-5 ps-5 pe-5">
+                <div class="h2 mb-0 mt-5">
+                    <span style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans'; text-transform: capitalize; font-size: 65px;">{{product.name}}</span>
                 </div>
-                <p>All-in-one VR Gaming Headset-64GB</p>
-                <div class="description">
+                <p style="font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans';">All-in-one VR Gaming Headset-64GB</p>
+                <div class="description mb-4">
                     {{product.description }}
                 </div>
+                <div class="mt-2">
+                    <ul class="" style="padding-left: 1rem;">
+                        <li class="mb-2">
+                            Next Level gameplay : Lauching with original games and experiences like Vader immortal: A Star Wars VR Series
+                        </li>
+                        <li>
+                            All-in-one VR : Simply set up the device with your Oculus mobile app and Oculus Quest has everything you need to explore VR, right out of the box
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg">
                 <div class="h5">
                     <span>Order Details</span> 
                     <p>Sold By Brandy and fulfilled br amazon</p>
@@ -47,18 +57,17 @@
                     <img src="https://placehold.co/500x350" alt="" class="rounded-2">
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
+            <div class="col-lg-4 d-flex justify-content-end align-items-end">
+                <div class="card bg-info mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">John Doe</h5>
                                 <p class="card-text">Most convenient autonomous VR headset ever. Put on our head and 3 seconds later you are in another dimension.</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                          <img src="https://placehold.co/400x600" class="img-fluid rounded-start" alt="...">
+                            <img src="https://placehold.co/400x600" class="img-fluid rounded-start" alt="...">
                         </div>
                     </div>
                 </div>
