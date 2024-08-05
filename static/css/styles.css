@@ -157,11 +157,11 @@
 } */
 
 #cardButton.grow-from-bottom {
-    animation: growFromBottom 5s forwards;
+    animation: growFromBottom 4s forwards;
 }
 
 #orderButton.grow-from-top {
-    animation: growFromTop 5s forwards;
+    animation: growFromTop 4s forwards;
 }
 
 @keyframes slideFromRight {
@@ -176,5 +176,43 @@
 }
 
 #subProductName.slide-from-right{
-    animation: slideFromRight 5s forwards; 
+    animation: slideFromRight 3s forwards; 
+}
+
+@keyframes slideFromBottom {
+    from{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#subDescription1.slide-from-bottom{
+    animation: slideFromBottom 3s forwards; 
+}
+
+#subDescription2.slide-from-bottom{
+    animation: slideFromBottom 3s forwards; 
+}
+
+#description.slide-from-bottom{
+    animation: slideFromBottom 3s forwards;
+}
+
+@keyframes slideCardFromBottom {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#card.slide-card-from-bottom{
+    animation: slideCardFromBottom 3s forwards;
 }

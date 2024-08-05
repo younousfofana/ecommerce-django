@@ -31,3 +31,25 @@ const subProductName = document.getElementById('subProductName');
 setTimeout(()=>{
     subProductName.classList.add('slide-from-right');
 }, 100)
+
+const description = document.getElementById('description');
+
+setTimeout(()=>{
+    description.classList.add('slide-from-bottom');
+}, 100);
+
+const subDescription1 = document.getElementById('subDescription1');
+const subDescription2 = document.getElementById('subDescription2');
+
+setTimeout(()=>{
+    subDescription1.classList.add('slide-from-bottom');
+}, 200);
+
+setTimeout(()=>{
+    subDescription2.classList.add('slide-from-bottom');  
+}, 300)
+
+const card = document.getElementById('card');
+setTimeout(()=>{
+    card.classList.add('slide-card-from-bottom');
+}, 100)
