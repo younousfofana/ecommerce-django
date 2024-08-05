@@ -25,3 +25,9 @@ setTimeout(()=>{
     cardButton.classList.add('grow-from-bottom');
     orderButton.classList.add('grow-from-top');
 }, 100);
+
+const subProductName = document.getElementById('subProductName');
+
+setTimeout(()=>{
+    subProductName.classList.add('slide-from-right');
+}, 100)

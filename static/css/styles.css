@@ -1,6 +1,5 @@
 *{
     scrollbar-width: thin;
-    font-family: 'Signika', 'Roboto', 'Noto Sans JP', 'Nunito', 'Open Sans' !important;
 }
 .customize-ul{
     padding-left: 1rem;
@@ -163,4 +162,19 @@
 
 #orderButton.grow-from-top {
     animation: growFromTop 5s forwards;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#subProductName.slide-from-right{
+    animation: slideFromRight 5s forwards; 
 }
