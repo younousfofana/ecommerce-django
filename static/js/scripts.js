@@ -52,4 +52,14 @@ setTimeout(()=>{
 const card = document.getElementById('card');
 setTimeout(()=>{
     card.classList.add('slide-card-from-bottom');
-}, 100)
+}, 100);
+
+const videoDescription = document.getElementById('videoDescription');
+setTimeout(()=>{
+    videoDescription.classList.add('slide-card-from-bottom');
+}, 100);
+
+const subtitleProduct = document.getElementById('subtitleProduct');
+setTimeout(()=>{
+    subtitleProduct.classList.add('slide-from-top');
+},100);

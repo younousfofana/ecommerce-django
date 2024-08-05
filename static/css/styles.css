@@ -216,3 +216,22 @@
 #card.slide-card-from-bottom{
     animation: slideCardFromBottom 3s forwards;
 }
+
+#videoDescription.slide-card-from-bottom{
+    animation: slideCardFromBottom 2s forwards;
+}
+
+@keyframes slideFromTop {
+    from{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#subtitleProduct.slide-from-top{
+    animation: slideFromTop 4s forwards; 
+}
