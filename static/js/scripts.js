@@ -63,3 +63,9 @@ const subtitleProduct = document.getElementById('subtitleProduct');
 setTimeout(()=>{
     subtitleProduct.classList.add('slide-from-top');
 },100);
+
+const priceCard = document.getElementById('priceCard');
+console.log('priceCard', priceCard);
+setTimeout(()=>{
+    priceCard.classList.add('disappear-to-apparear');
+}, 100);

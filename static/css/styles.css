@@ -235,3 +235,17 @@
 #subtitleProduct.slide-from-top{
     animation: slideFromTop 4s forwards; 
 }
+
+@keyframes disapparearToApparear {
+    from{
+        transform: scale(0) translateX(50%);
+        opacity: 0;
+    }to {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+
+#priceCard.disappear-to-apparear{
+    animation : disapparearToApparear 4s forwards;
+}
