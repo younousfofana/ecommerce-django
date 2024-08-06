@@ -24,7 +24,7 @@ const orderButton = document.getElementById('orderButton');
 setTimeout(()=>{
     cardButton.classList.add('grow-from-bottom');
     orderButton.classList.add('grow-from-top');
-}, 100);
+}, 500);
 
 const subProductName = document.getElementById('subProductName');
 
@@ -65,7 +65,13 @@ setTimeout(()=>{
 },100);
 
 const priceCard = document.getElementById('priceCard');
-console.log('priceCard', priceCard);
 setTimeout(()=>{
     priceCard.classList.add('disappear-to-apparear');
 }, 100);
+
+const orderDetails = document.getElementById('orderDetails');
+const soldBy = document.getElementById('soldBy');
+setTimeout(()=>{
+    orderDetails.classList.add('slide-from-left');
+    soldBy.classList.add('slide-from-left');
+}, 100)

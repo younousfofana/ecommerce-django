@@ -157,11 +157,11 @@
 } */
 
 #cardButton.grow-from-bottom {
-    animation: growFromBottom 4s forwards;
+    animation: growFromBottom 5s forwards;
 }
 
 #orderButton.grow-from-top {
-    animation: growFromTop 4s forwards;
+    animation: growFromTop 5s forwards;
 }
 
 @keyframes slideFromRight {
@@ -248,4 +248,23 @@
 
 #priceCard.disappear-to-apparear{
     animation : disapparearToApparear 4s forwards;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: scale(0) translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+
+#orderDetails.slide-from-left{
+    animation: slideFromLeft 3s forwards; 
+}
+
+#soldBy.slide-from-left{
+    animation: slideFromLeft 3s forwards;
 }
