@@ -96,14 +96,11 @@ if(orderDetails && soldBy){
 
 document.addEventListener('DOMContentLoaded', function(){
     const categoryTitle = document.getElementById('categoryTitle');
-    console.log('categoryTitle', categoryTitle);
     
     if (categoryTitle) {
         const text = categoryTitle.textContent;
-        console.log("texte a afficher",text);
         categoryTitle.textContent = '';
 
-        // Créez les <span> pour chaque lettre et les ajoutez à l'élément
         for(let i = 0; i < text.length; i++){
             const span = document.createElement('span');
             span.textContent = text[i];
@@ -111,13 +108,17 @@ document.addEventListener('DOMContentLoaded', function(){
             categoryTitle.appendChild(span);
         }
 
-        // Sélectionnez les spans créés et appliquez l'animation
         const spans = categoryTitle.querySelectorAll('span');
         spans.forEach((span, index)=>{
             setTimeout(() => {
                 span.classList.remove('hidden');
                 span.classList.add('visible');
-            }, index * 100); // Modifiez cette valeur pour changer la vitesse
+            }, index * 100); 
         });
     }
 });
+
+const subtitleCategory = document.getElementById('subTitleCategory');
+if(subtitleCategory){
+    subtitleCategory.classList.add('slide-sub-from-left');
+}

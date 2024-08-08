@@ -277,3 +277,17 @@
     opacity: 1;
     transition: opacity 0.5s;
 }
+
+@keyframes slideSubFromLeft {
+    from{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#subTitleCategory.slide-sub-from-left{
+    animation: slideSubFromLeft 3s forwards;
+}
