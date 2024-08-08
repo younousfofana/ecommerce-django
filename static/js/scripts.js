@@ -122,3 +122,17 @@ const subtitleCategory = document.getElementById('subTitleCategory');
 if(subtitleCategory){
     subtitleCategory.classList.add('slide-sub-from-left');
 }
+
+const showcaseImage = document.getElementById('showcaseImage');
+if(showcaseImage){
+    showcaseImage.classList.add('slide-image-from-left');
+}
+
+const nameShowcaseImage = document.getElementById('nameShowcaseImage');
+const nameShowCaseImage1 = document.getElementById('nameShowcaseImage1');
+const showcasediv = document.getElementById('showcasediv');
+if(nameShowcaseImage){
+    nameShowcaseImage.classList.add('slide-name-product');
+    nameShowCaseImage1.classList.add('slide-name-product1');
+    showcasediv.classList.add('slide-div-from-left');
+}

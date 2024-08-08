@@ -280,7 +280,7 @@
 
 @keyframes slideSubFromLeft {
     from{
-        transform: translateX(-10%);
+        transform: translateX(-3%);
         opacity: 0;
     }
     to{
@@ -290,4 +290,31 @@
 }
 #subTitleCategory.slide-sub-from-left{
     animation: slideSubFromLeft 3s forwards;
+}
+
+@keyframes showCaseImageSlide {
+    from{
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#showcaseImage.slide-image-from-left{
+    animation: showCaseImageSlide 5s forwards;
+}
+
+#nameShowcaseImage.slide-name-product{
+    animation: showCaseImageSlide 5s forwards;
+}
+
+#nameShowcaseImage1.slide-name-product1{
+    animation: showCaseImageSlide 5s forwards;
+}
+
+#showcasediv.slide-div-from-left{
+    animation: showCaseImageSlide 1s forwards;
 }
