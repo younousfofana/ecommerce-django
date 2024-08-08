@@ -268,3 +268,12 @@
 #soldBy.slide-from-left{
     animation: slideFromLeft 3s forwards;
 }
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
