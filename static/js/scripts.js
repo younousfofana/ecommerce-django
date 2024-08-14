@@ -136,3 +136,25 @@ if(nameShowcaseImage){
     nameShowCaseImage1.classList.add('slide-name-product1');
     showcasediv.classList.add('slide-div-from-left');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.category-card');
+
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 130);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const products = document.querySelectorAll('.category-product');
+
+    products.forEach((card, index) => {
+        setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 130);
+    });
+});

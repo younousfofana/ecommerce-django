@@ -318,3 +318,15 @@
 #showcasediv.slide-div-from-left{
     animation: showCaseImageSlide 1s forwards;
 }
+
+.category-card{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.category-product{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
