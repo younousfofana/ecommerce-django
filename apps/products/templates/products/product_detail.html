@@ -48,8 +48,11 @@
                     <div class="h5">
                         $<span>{{product.price}}</span>
                     </div>
-                    <div>
-                        <span>Quantity : </span>
+                    <div class="product-quantity">
+                        <button type="button" id="decrementButton" class="btn btn-danger">-</button>
+                        <input type="text" id="requestedQuantity" value="1" readonly>
+                        <button type="button" id="incrementButton" class="btn btn-success">+</button>
+                        <span>Quantity : <span id="availableQuantity">{{product.quantity}}</span></span>
                     </div>
                     <div class="btn-group-vertical d-flex justify-content-center m-2">
                         <button type="button" class="btn btn-success rounded-top-4" id="cardButton">Add to card</button>

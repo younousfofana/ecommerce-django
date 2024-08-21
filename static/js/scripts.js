@@ -158,3 +158,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }, index * 130);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const incrementButton = document.getElementById('incrementButton');
+    const decrementButton = document.getElementById('decrementButton');
+    const requestedQuantityInput = document.getElementById('requestedQuantity');
+    const availableQuantity = parseInt(document.getElementById('availableQuantity').textContent);
+
+    // Initial requested quantity
+    let requestedQuantity = parseInt(requestedQuantityInput.value);
+
+    incrementButton.addEventListener('click', function() {
+        if (requestedQuantity < availableQuantity) {
+            requestedQuantity++;
+            requestedQuantityInput.value = requestedQuantity;
+        }
+    });
+
+    decrementButton.addEventListener('click', function() {
+        if (requestedQuantity > 1) {
+            requestedQuantity--;
+            requestedQuantityInput.value = requestedQuantity;
+        }
+    });
+});
