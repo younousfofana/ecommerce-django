@@ -60,6 +60,7 @@
                     <form action="{% url 'add_to_cart' product.id %}" method="post">
                         <div class="btn-group-vertical d-flex justify-content-center m-2">
                             {% csrf_token %}
+                            <input type="hidden" name="quantity" id="hiddenQuantity" value="1">
                             <button type="submit" class="btn btn-success rounded-top-4" id="cardButton">Add to card</button>
                             <button type="button" class="btn btn-success rounded-bottom-4" id="orderButton">1-Click order</button>
                         </div>

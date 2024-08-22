@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const incrementButton = document.getElementById('incrementButton');
     const decrementButton = document.getElementById('decrementButton');
     const requestedQuantityInput = document.getElementById('requestedQuantity');
+    const hiddenQuantity = document.getElementById('hiddenQuantity');
     const availableQuantity = parseInt(document.getElementById('availableQuantity').textContent);
 
     // Initial requested quantity
@@ -172,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (requestedQuantity < availableQuantity) {
             requestedQuantity++;
             requestedQuantityInput.value = requestedQuantity;
+            hiddenQuantity.value = requestedQuantity;
         }
     });
 
@@ -179,6 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (requestedQuantity > 1) {
             requestedQuantity--;
             requestedQuantityInput.value = requestedQuantity;
+            hiddenQuantity.value = requestedQuantity;
         }
     });
 });
