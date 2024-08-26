@@ -41,8 +41,6 @@ def cart_summary(request):
         else:
             cart = Cart.objects.get(session_key=session_key)
 
-    context = {
-        'cart': cart,
-    }
+        context = { 'cart': cart }
 
     return render(request, 'cart_summary.html', context)

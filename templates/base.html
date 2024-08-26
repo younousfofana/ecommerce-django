@@ -43,14 +43,16 @@
                 </form>
 
                 <!-- Card Button -->
-                <button type="button" class="me-2 py-1 rounded-pill btn btn-light position-relative">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                    </svg>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        8
-                    </span>
-                </button>
+                 <a href="{% url 'cart_summary' %}">
+                     <button type="button" class="me-2 py-1 rounded-pill btn btn-light position-relative">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                         </svg>
+                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                             8
+                         </span>
+                     </button>
+                 </a>
 
                 <button type="button" class="btn btn-light rounded-pill">
                     <img class="rounded-circle" src="https://placehold.co/30x30" alt="">

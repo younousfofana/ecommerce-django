@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}BuyMore{% endblock %}
+
+{% block content %}
+   <div class="container-fluid">
+       <div class="">
+            <h2 class="m-0">Shopping Bag</h2>
+            <p class="f-5">
+               <span class="fw-bolder"> 8 items</span> in your bag
+            </p>
+       </div>
+       <div class="row">
+        <div class="col-8">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://placehold.co/400x200" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-danger">Supprimer</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary">Ajouter</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            
+        </div>
+       </div>
+
+   </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
