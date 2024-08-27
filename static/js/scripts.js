@@ -164,24 +164,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const decrementButton = document.getElementById('decrementButton');
     const requestedQuantityInput = document.getElementById('requestedQuantity');
     const hiddenQuantity = document.getElementById('hiddenQuantity');
-    const availableQuantity = parseInt(document.getElementById('availableQuantity').textContent);
 
-    // Initial requested quantity
-    let requestedQuantity = parseInt(requestedQuantityInput.value);
+    let availableQuantity = document.getElementById('availableQuantity');
 
-    incrementButton.addEventListener('click', function() {
-        if (requestedQuantity < availableQuantity) {
-            requestedQuantity++;
-            requestedQuantityInput.value = requestedQuantity;
-            hiddenQuantity.value = requestedQuantity;
-        }
-    });
+    if(availableQuantity){
+          availableQuantity = parseInt(availableQuantity.textContent);
+    }
 
-    decrementButton.addEventListener('click', function() {
-        if (requestedQuantity > 1) {
-            requestedQuantity--;
-            requestedQuantityInput.value = requestedQuantity;
-            hiddenQuantity.value = requestedQuantity;
-        }
-    });
+   if(requestedQuantityInput){
+       let requestedQuantity = parseInt(requestedQuantityInput.value);
+       
+       incrementButton.addEventListener('click', function() {
+            if (requestedQuantity < availableQuantity) {
+                requestedQuantity++;
+                requestedQuantityInput.value = requestedQuantity;
+                hiddenQuantity.value = requestedQuantity;
+            }
+       });
+        decrementButton.addEventListener('click', function() {
+            if (requestedQuantity > 1) {
+                requestedQuantity--;
+                requestedQuantityInput.value = requestedQuantity;
+                hiddenQuantity.value = requestedQuantity;
+            }
+        });
+   }
+    
+
+    /* if(incrementButton){ */
+        
+    /* } */
+
+    /* if(decrementButton){ */
+        
+   /*  } */
 });

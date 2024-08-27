@@ -40,7 +40,7 @@ def cart_summary(request):
             cart = None
         else:
             cart = Cart.objects.get(session_key=session_key)
+            print('le panier de session', cart);
+        cartItems = cart.cartitems_set.all() if cart else []
 
-        context = { 'cart': cart }
-
-    return render(request, 'cart_summary.html', context)
+    return render(request, 'cart_summary.html', {'cart_items' : cartItems})
