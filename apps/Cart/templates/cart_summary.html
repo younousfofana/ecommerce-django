@@ -7,7 +7,7 @@
        <div class="">
             <h2 class="m-0">Shopping Bag</h2>
             <p class="f-5">
-               <span class="fw-bolder"> 8 items</span> in your bag
+               <span class="fw-bolder"> {{total_products_card}} items</span> in your bag
             </p>
        </div>
        <div class="row">
@@ -23,6 +23,8 @@
                       <div>
                         <h5 class="card-title">{{ item.product.name }}</h5>
                         <p class="card-text">{{ item.product.description }}</p>
+                        <p class="card-text">Quantite : {{ item.quantity }}</p>
+                        <p class="card-text">Product Price : {{ item.product.price }}</p>
                       </div>
                       <div class="row">
                         <div class="col-6">
